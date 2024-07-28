@@ -1,5 +1,5 @@
 from AdvancedCalculator.utils import is_formula
-from AdvancedCalculator.advancedOperations import calculate_formula
+from AdvancedCalculator.advancedOperations import calculate
 
 def main():
 
@@ -16,7 +16,7 @@ if you want to leave write \"esc\""""
         if input_text == "esc":
             break
         if is_formula(input_text):
-            result = calculate_formula(input_text)
+            result = calculate(input_text)
             print("Result:", result)
         else:
             print("I can't understund formula, try again!")
